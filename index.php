@@ -6,7 +6,7 @@
 
 get_header(); ?>
 
-<div id="copy"> 
+<div id="shell"> 
 
 	<?php if (have_posts()) : ?>
 		<?php while (have_posts()) : the_post(); ?>

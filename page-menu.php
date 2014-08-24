@@ -2,11 +2,12 @@
 /**
  * @package WordPress
  * @subpackage Basic Starter
- *Template Name: Home Page
+ * Template Name: Menu Page
  */
 
 get_header(); ?>
-<div id="copy"> 
+<div id="shell"> 
+
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	<div class="post" id="post-<?php the_ID(); ?>">
@@ -16,5 +17,5 @@ get_header(); ?>
 		<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 	</div>
 	<?php endwhile; endif; ?>   
-</div> <!-- end copy -->
+</div> <!-- end shell -->
 <?php get_footer(); ?>

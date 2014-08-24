@@ -59,6 +59,8 @@ add_theme_support( 'post-thumbnails' );
 
 if ( function_exists( 'add_image_size' ) ) { 
 	add_image_size( 'team', 150, 150 );
+	add_image_size('gallery', 310 ,99999);
+	add_image_size( 'banner', 1400, 350, true);
 }
 
 // Add Menu Support

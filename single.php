@@ -7,7 +7,7 @@
 get_header();
 ?>
 
-<div id="copy"> 
+<div id="shell"> 
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     <div <?php post_class() ?> id="post-<?php the_ID(); ?>">
@@ -39,6 +39,6 @@ get_header();
 
 	<?php endif; ?>
 
-</div> <!-- end copy -->
-<?php get_sidebar(); ?>
+</div> <!-- end shell -->
+
 <?php get_footer(); ?>

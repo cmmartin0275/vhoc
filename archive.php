@@ -7,7 +7,7 @@
 get_header();
 ?>
 
-<div id="copy"> 
+<div id="shell"> 
 
 		<?php if (have_posts()) : ?>
 

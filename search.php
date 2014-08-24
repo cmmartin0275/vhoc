@@ -6,7 +6,7 @@
 
 get_header(); ?>
 
-<div id="copy"> 
+<div id="shell"> 
 
 	<?php if (have_posts()) : ?>
 
@@ -30,7 +30,7 @@ get_header(); ?>
 
 	<?php endif; ?>
 
-</div> <!-- end copy -->
+</div> <!-- end shell -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

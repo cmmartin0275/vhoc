@@ -7,8 +7,19 @@
 	</div> <!-- /content -->
 </div> <!-- /container -->
 <div id="footer">
-	<?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?>           
-    <p>Copyright &copy; <?php echo date('Y') ?></p>         
+	<div id="shell">  
+		
+		<p class="address">
+			<?php echo get_post_meta(2,'Address',true); ?>
+		</p>
+		<p class="hours">
+			<?php echo get_post_meta(2,'Hours Tagline',true); ?>
+		</p>
+		<p class="phone">
+			<?php echo get_post_meta(2,'Phone Number',true); ?>
+		</p>
+    	<p class="copyright">Copyright&copy; <?php echo date('Y') ?> Victor Hugos Restaurant Group LLC</p>     
+    </div>    
 </div> <!-- /footer -->
 
 </div> <!-- /page -->

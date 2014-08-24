@@ -7,7 +7,7 @@
 get_header();
 ?>
 
-<div id="copy"> 
+<div id="shell"> 
 
     <h1>Not Found</h1>
     <p>Sorry, but you are looking for something that isn't here.</p>

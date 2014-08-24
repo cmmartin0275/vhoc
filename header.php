@@ -17,6 +17,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700|Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 <?php wp_enqueue_script( "site-jquery", get_bloginfo('template_url')."/js/plugins.js", array( 'jquery' ) ); ?>
 <?php wp_enqueue_script( "site-js", get_bloginfo('template_url')."/js/site.js", array( 'site-jquery' ) ); ?>
@@ -33,16 +34,29 @@
 
     <div id="header">
         <div class="top">
-             <?php if(is_front_page() ) { ?>
+            <div id="shell">
+                <div class="social">
+                    <?php if ( function_exists('cn_social_icon') ) echo cn_social_icon(); ?>
+                </div>   
+                <div class="site-name"><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></div>
+
+            </div>
+        </div>
+        <div class="middle">
+               <?php if(is_front_page() ) { ?>
             <h1 id="logo"><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?><span></span></a></h1>
                 <?php } else { ?>        
             <div id="logo"><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?><span></span></a></div>
-            <?php } ?>       
+            <?php } ?>  
         </div>
-   
         <div class="nav">     
 		<?php wp_nav_menu( array( 'theme_location' => 'navigation' ) ); ?>  
-        </div>              
+        <div class="menu-icon"><a href="#"></a></div>
+        <div class="mobile-nav">                
+            <?php wp_nav_menu( array( 'menu' => 'Main Navigation' ) ); ?> 
+        </div>  
+        </div>      
+              
     </div> <!-- /header -->
 
     <div id="container">
