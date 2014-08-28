@@ -2,11 +2,17 @@ jQuery(document).ready(function() {
 	jQuery(".nav ul li a[href='#']").attr('href', 'javascript:void(0)');
 	jQuery(".nav .menu-icon a[href='#']").attr('href', 'javascript:void(0)');
 
-	var container = document.querySelector('.gallery');
-	var msnry = new Masonry( container, {
-	  itemSelector: '.item',
-	  columnWidth: 20, 
+	var posts = document.querySelectorAll('.item img');
+	imagesLoaded( posts, function() {
+		var container = document.querySelector('.gallery');
+		var msnry = new Masonry( container, {
+		  itemSelector: '.item',
+		  columnWidth: 20, 
+		});
+
 	});
+
+	
 
 	jQuery('.menu-icon a').click( function(event){
 		event.preventDefault();

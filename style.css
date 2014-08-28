@@ -200,12 +200,13 @@ html {
 }
 
 body {
-  font-family: 'Roboto Slab', serif;
-  font-size: 14px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
   line-height: 1.428571429;
-  color: #333333;
-  background-color: #f3f3f3;
+  color: #260B09;
+  background-color: #FDF5E6;
 }
+body, h1, h2, h3, h4, h5, h6, td, p, li, input, select, textarea {font-family: 'Josefin Sans', sans-serif; }
 
 input,
 button,
@@ -223,7 +224,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #542113;
+  color: #3F1B13;
   text-decoration: underline;
   outline: none;
 }
@@ -253,7 +254,6 @@ ol ol {
 */
   
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Roboto', Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
 }
@@ -336,20 +336,25 @@ h5 { font-size:14px; margin: 0 0 8px 0;}
 
 
 
-#header .middle {background: #222; position: relative; height: 140px; padding: 10px 0 0 0;}
+#header .middle {background: #260B09; position: relative; height: 165px; padding: 10px 0 0 0;}
+.home #header .middle {background: #260B09; position: relative; height: 267px; padding: 10px 0 0 0;}
 
-#logo { margin: -30px auto 0; padding:0; width:130px; height:196px; cursor:pointer; position: relative;}
-#logo a { margin: 0; padding: 0; position:absolute; top: 0; left: 0; width:130px; height:196px; overflow:hidden; text-indent:-10000px; display:block; cursor:pointer;}
-#logo a span { display:block; position:absolute; left:0; top:0; z-index:1;width:130px; height:196px; margin:0; padding:0; background:url(images/victor-hugos.png) top left no-repeat; cursor:pointer; }
+h1#logo { margin: -25px auto 0; padding:0; width:200px; height:305px; cursor:pointer; position: relative;}
+h1#logo a { margin: 0; padding: 0; position:absolute; top: 0; left: 0; width:200px; height:305px; overflow:hidden; text-indent:-10000px; display:block; cursor:pointer;}
+h1#logo a span { display:block; position:absolute; left:0; top:0; z-index:1;width:200px; height:305px; margin:0; padding:0; background:url(images/victor-hugos-home.png) top left no-repeat; cursor:pointer; }
+
+div#logo { margin: -20px auto 0; padding:0; width:130px; height:196px; cursor:pointer; position: relative;}
+div#logo a { margin: 0; padding: 0; position:absolute; top: 0; left: 0; width:130px; height:196px; overflow:hidden; text-indent:-10000px; display:block; cursor:pointer;}
+div#logo a span { display:block; position:absolute; left:0; top:0; z-index:1;width:130px; height:196px; margin:0; padding:0; background:url(images/victor-hugos.png) top left no-repeat; cursor:pointer; }
 
 #header .nav { position: relative; background: #fff; margin: 0 0 20px; text-align: center; width: 100%; padding: 0; border-bottom: 4px double #333;}
 .home #header .nav {border: none; margin-bottom: 0;}
 #header .nav ul#menu-main-navigation { list-style-type:none; margin: 0 auto; padding: 0; text-align: left; display: table;  }  
 #header .nav ul#menu-main-navigation li { display:inline-block; padding: 0; position:relative; text-align: center; width: 19.5%; }  
 #header .nav ul#menu-main-navigation li:last-child {padding: 0;}
-#header .nav ul li a { letter-spacing: 1px; font-family: 'Roboto', Arial, sans-serif; text-transform:uppercase; padding: 35px 45px 20px 45px; display: block; font-weight: bold; font-size: 16px; }
+#header .nav ul li a { letter-spacing: 1px; text-transform:uppercase; padding: 20px 45px 15px 45px; display: block; font-weight: bold; font-size: 18px; }
 #header .nav ul li a:hover, #header .nav ul li.current-menu-item a, #header .nav ul li.current-menu-parent a { text-decoration:none; color: #542113; }
-#header .nav ul#menu-main-navigation li .sub-menu {display: none; width: 119px; padding: 0;  position: absolute; top: 60px; background: #fff; left: 14px; z-index: 500; }
+#header .nav ul#menu-main-navigation li .sub-menu {display: none; width: 119px; padding: 0;  position: absolute; top: 60px; background: #fff; left: 19px; z-index: 500; }
 #header .nav ul#menu-main-navigation li:hover .sub-menu {display: block;}
 #header .nav ul#menu-main-navigation li .sub-menu li {display: block; padding: 0; text-align: center; width: auto;}
 #header .nav ul#menu-main-navigation li .sub-menu li a {padding: 5px 10px; font-weight: normal; font-size: 14px; padding: 8px 0;}
@@ -376,7 +381,7 @@ h5 { font-size:14px; margin: 0 0 8px 0;}
 #header .nav .mobile-nav ul li.current-menu-parent .sub-menu li.current-menu-item a, #header .nav .mobile-nav ul li.current-menu-parent a  {text-decoration:none; color: #542113; }
 
 /* ================================ Footer ================================ */
-#footer { clear:both; font-size:12px; padding:30px 0; position:relative; margin: 30px auto 0; border-top: 4px double #333; }
+#footer { clear:both; font-size:13px; padding:30px 0; position:relative; margin: 30px auto 0; border-top: 4px double #333; }
 #footer:after {clear: both; height: 0; visibility: hidden; display: block; content: '';}
 #footer ul { list-style-type:none; display:block; margin: 0 0 10px 0; height:10px; }
 #footer ul li { float:left; margin-right:12px; padding-right:12px; border-right: 1px solid #ffffff; line-height:10px; height:10px; }
@@ -441,7 +446,7 @@ body.page #shell ul, body.page #shell ol { margin-left:2.0em; }
 }
 .banner a:hover {text-decoration: none;}
 
-.banner-info { display: inline-block; text-align: center; vertical-align: middle; max-width: 800px; width: 90%; margin: 0 auto 0; padding: 0px 0 0 0; color: #fff;}
+.banner-info { display: inline-block; text-align: center; vertical-align: middle; max-width: 800px; width: 90%; margin: 0 auto 0; padding: 0px 0 0 0; color: #fff; text-shadow:3px 0px 18px rgba(45, 11, 11, 1),3px 0px 18px rgba(45, 11, 11, 1),3px 0px 18px rgba(45, 11, 11, 1), 3px 0px 18px rgba(45, 11, 11, 1);}
 
 .banner-pager {position: absolute; top: 535px; cursor: pointer; width: 100%; text-align: center; z-index: 500; color: #a7a9aa; font-size: 52px;}
 .banner-pager .cycle-pager-active {color: #939393;}
@@ -458,7 +463,7 @@ body.page #shell ul, body.page #shell ol { margin-left:2.0em; }
 
 
 /* ================================ Gallery ============================= */
-.page-template-page-gallery-php .item {  background: #fff; border: 1px solid; padding: .8%; width: 30.2%; max-width: 315px; margin: 0 0 5px 0}
+.page-template-page-gallery-php .item {  background: #fff; border: 1px solid; padding: .8%; width: 30.2%; max-width: 315px; margin: 0 0 5px 0; position: relative;}
 .page-template-page-gallery-php .item img {width: 100%; max-width: 310px; height: auto;}
 
 /* ================================ Misc ================================ */    
